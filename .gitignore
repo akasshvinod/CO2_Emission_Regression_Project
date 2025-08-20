@@ -1,49 +1,53 @@
-# Byte-compiled / optimized / DLL files
+# ---- Python ----
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual environment
-.venv/
-venv/
-env/
-ENV/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Output files
-*.log
-*.csv
-*.tsv
-*.json
-*.xlsx
-
-# Data (keep only raw/processed if needed)
-data/processed/*
-!data/raw/
-
-# Model files
+*.pyo
+*.so
+*.egg-info/
+*.egg
 *.pkl
-*.joblib
-*.h5
-*.hdf5
 
-# System files
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Virtual Environments ----
+.env/
+.venv/
+env/
+venv/
+
+# ---- Logs & Outputs ----
+*.log
+*.out
+*.err
+
+# ---- OS Files ----
 .DS_Store
 Thumbs.db
 
-# IDE files
-.vscode/
-.idea/
+# ---- Large Data Dumps (optional) ----
+# Ignore all CSV/Excel by default
+*.csv
+*.xlsx
 
-# Reports and figures
-outputs/figures/*
-outputs/reports/*
-outputs/models/*
+# BUT allow data/raw and data/processed contents
+!data/raw/
+!data/raw/**
+!data/processed/
+!data/processed/**
 
-# Python packaging
-*.egg-info/
-dist/
-build/
-.eggs/
+# ---- Models (optional) ----
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.tflite
+
+# ---- Reports/Exports ----
+*.pdf
+*.html
+*.png
+*.jpg
+*.jpeg
