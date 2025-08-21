@@ -1,0 +1,14 @@
+{
+    "sample_input": {
+        "Make": "TOYOTA",
+        "Model": "CAMRY",
+        "Vehicle Class": "MID-SIZE",
+        "Engine Size(L)": 2.5,
+        "Cylinders": 4.0,
+        "Transmission": "A8",
+        "Fuel Type": "Regular Petrol",
+        "Fuel Consumption City (L/100 km)": 9.2,
+        "Fuel Consumption Hwy (L/100 km)": 6.5,
+        "Fuel Consumption Comb (L/100 km)": 8.0
+    }
+}
