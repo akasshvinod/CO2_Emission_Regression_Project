@@ -1,53 +1,53 @@
-# ---- Python ----
+# --- Python ---
 __pycache__/
 *.py[cod]
-*.pyo
 *.so
-*.egg-info/
 *.egg
-*.pkl
+*.egg-info/
+dist/
+build/
 
-# ---- Jupyter Notebooks ----
+# --- Jupyter Notebooks ---
 .ipynb_checkpoints/
-*.ipynb_checkpoints
 
-# ---- Virtual Environments ----
-.env/
-.venv/
+# --- Virtual Environments ---
+.env
+.venv
 env/
 venv/
+ENV/
 
-# ---- Logs & Outputs ----
+# --- Logs & Temp Files ---
 *.log
-*.out
-*.err
+*.tmp
+*.swp
 
-# ---- OS Files ----
+# --- Data (don’t push processed/big files) ---
+data/processed/
+data/interim/
+*.npz
+*.npy
+*.pkl
+*.csv.zip
+
+# --- Models (keep locally or with Git LFS) ---
+outputs/models/
+*.h5
+*.pt
+*.pth
+*.joblib
+*.pkl
+
+# --- IDE files ---
+.vscode/
+.idea/
+
+# --- OS Files ---
 .DS_Store
 Thumbs.db
 
-# ---- Large Data Dumps (optional) ----
-# Ignore all CSV/Excel by default
-*.csv
-*.xlsx
-
-# BUT allow data/raw and data/processed contents
-!data/raw/
-!data/raw/**
-!data/processed/
-!data/processed/**
-
-# ---- Models (optional) ----
-*.h5
-*.hdf5
-*.ckpt
-*.pt
-*.pth
-*.tflite
-
-# ---- Reports/Exports ----
-*.pdf
-*.html
-*.png
-*.jpg
-*.jpeg
+# --- Git LFS (if you enable it) ---
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
